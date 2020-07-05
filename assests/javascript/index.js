@@ -1,20 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-  
-    // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
-  
-      // Add a click event on each of them
       $navbarBurgers.forEach( el => {
         el.addEventListener('click', () => {
-  
-          // Get the target from the "data-target" attribute
           const target = el.dataset.target;
           const $target = document.getElementById(target);
-  
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
           el.classList.toggle('is-active');
           $target.classList.toggle('is-active');
   
@@ -23,17 +13,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-function scrolling(n) {
-    const w = window.innerHeight;
-    let scrollTo;
-    if(n===4) {
-        scrollTo = (w - (w/6))*n + 350;
-    } else {
-        scrollTo = (w - (w/6))*n;
-    }
-    window.scrollTo({
-        top: scrollTo,
-        left: 0,
-        behavior: 'smooth'
+function submit() {
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const subject = document.getElementById("subject").value;
+  const message = document.getElementById("message").value;
+
+  var service_id = "default_service";
+
+  const params = {
+    reply_to: email,
+    from_name: name,
+    subject,
+    message,
+  };
+
+  var template_id = "template_3HYPq8Hz";
+  console.log(service_id, params, template_id);
+  emailjs.send(service_id, template_id, params)
+  	.then(function(){ 
+       alert("Thanks for Reaching Out!");
+     }, function(err) {
+       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
     });
+
+  return false;
 }
