@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erin McNulty</title>
-    <link rel="icon" href="./assests/images/EM Logo5.png" type="image/png">
+    <link rel="icon" href="./assests/images/EM Logo1.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel = "stylesheet" href="./assests/stylesheets/style.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
@@ -54,19 +54,46 @@
             </div>
         </nav>
         <main role="main">
-            <section class="section is-large is-vertical-center" id="section1">
-                <div class="container has-text-centered pt-5">
-                  <h2 class="title is-2 is-spaced">Hello &#128075; I'm <strong>Erin McNulty</strong>.</h2>
-                  <h5 class="subtitle is-5">
-                    I am a <strong>Full-Stack Web Developer</strong> and a <strong>Student</strong>.
-                  </h5>
-                  <button class="button is-large">
-                    <a class="hvr-icon-hang" href="#section2">
-                        About Me
-                        <i class="fas fa-arrow-down hvr-icon"></i>
-                      </a>
-                  </button>
-                 </div>
+            <section class="section is-medium is-vertical-center" id="section1">
+                <div class="tile is-vertical pt-3">
+                    <div class="tile is-hidden-mobile">
+                        <div class="tile">
+                            <img src="assests/images/icons8-planet-128.png" width="128px">
+                        </div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile">
+                            <img src="assests/images/icons8-web-160.png" width="120px">
+                        </div>
+                    </div>
+                    <div class="tile">
+                        <div class="tile">
+                            <div class="container has-text-centered py-6">
+                                <h2 class="title is-2 is-spaced">Hello 👋 I'm <strong>Erin McNulty</strong>.</h2>
+                                <h5 class="subtitle is-5">
+                                    I am a <strong>Full-Stack Web Developer</strong> and a <strong>Student</strong>.
+                                </h5>
+                                <button class="button is-large">
+                                    <a class="hvr-icon-hang" href="#section2">
+                                        About Me
+                                        <svg class="svg-inline--fa fa-arrow-down fa-w-14 hvr-icon" aria-hidden="true" data-prefix="fas" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"></path></svg><!-- <i class="fas fa-arrow-down hvr-icon"></i> -->
+                                    </a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile is-hidden-mobile">
+                        <div class="tile"></div>
+                        <div class="tile">
+                            <img src="assests/images/icons8-rocket-128.png" width="128px">
+                        </div>
+                        <div class="tile"></div>
+                        <div class="tile"></div>
+                        <div class="tile">
+                            <img src="assests/images/icons8-baseball-ball-128.png" width="128px">
+                        </div>
+                    </div>
+                </div>
               </section>
               <section class="section is-medium is-vertical-center blue-background" id="section2">
                 <div class="container">
@@ -190,8 +217,8 @@
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/timesort.png" alt="Avatar" class="hoverImage">
-                                    <div class="hoverOverlay">
+                                    <img src="./assests/images/timesort.png" alt="Avatar" class="hoverImage" onclick='toggleModal("timesort")'>
+                                    <div class="hoverOverlay is-hidden-touch">
                                         <div class="hoverText">
                                           TimeSort manages the user's time for them. <br>
                                           After entering in what they need to get done, TimeSort organizes the user’s tasks 
@@ -206,12 +233,35 @@
                                           </a>
                                         </div>
                                     </div>
+                                    <div class="modal is-hidden-desktop" id="timesort">
+                                        <div class="modal-background" onclick='toggleModal("timesort")'></div>
+                                        <div class="modal-card">
+                                          <header class="modal-card-head">
+                                                <p class="modal-card-title  has-icons-right">
+                                                    <a href="https://timesort.co">
+                                                    <strong class="has-text-black">TimeSort</strong>
+                                                    <i class="fas fa-external-link-alt has-text-black"></i>
+                                                    </a>
+                                                </p>
+                                            <button class="delete" aria-label="close" onclick='toggleModal("timesort")'></button>
+                                          </header>
+                                          <section class="modal-card-body has-text-left">
+                                                TimeSort manages the user's time for them. <br>
+                                                After entering in what they need to get done, TimeSort organizes the user’s tasks 
+                                                around the preexisting events in their Google Calendar and gives them a minute-by-minute 
+                                                plan to accomplish everything they hope to. <br> I worked as a Javascript engineer on the team 
+                                                and helped lead the user testing and validation processes. <br><br>
+                                                <strong class="has-text-left">Group Project</strong> <br>
+                                                <strong class="has-text-left">Built With:</strong> HTML (/ERB), CSS, JavaScript, C++, and Ruby on Rails <br><br>
+                                          </section>
+                                        </div>
+                                      </div>
                                   </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/n8n.png" alt="Avatar" class="hoverImage">
-                                    <div class="hoverOverlay">
+                                    <img src="./assests/images/n8n.png" alt="Avatar" class="hoverImage" onclick='toggleModal("n8n")'>
+                                    <div class="hoverOverlay is-hidden-touch">
                                       <div class="hoverText is-size-6-mobile">  
                                           n8n is an open-source workflow automation tool. <br>
                                           I worked as a contributor building new integrations and writing documentation. 
@@ -223,16 +273,38 @@
                                             <strong class="has-text-white">n8n.io</strong>
                                             <i class="fas fa-external-link-alt has-text-white"></i>
                                           </a>  
-                                          </div>
+                                        </div>
                                     </div>
+                                    <div class="modal is-hidden-desktop" id="n8n">
+                                        <div class="modal-background" onclick='toggleModal("n8n")'></div>
+                                        <div class="modal-card">
+                                          <header class="modal-card-head">
+                                                <p class="modal-card-title has-icons-right">
+                                                    <a href="https://n8n.io">
+                                                        <strong class="has-text-black">n8n</strong>
+                                                        <i class="fas fa-external-link-alt has-text-black"></i>
+                                                      </a> 
+                                                </p>
+                                            <button class="delete" aria-label="close" onclick='toggleModal("n8n")'></button>
+                                          </header>
+                                          <section class="modal-card-body has-text-left">
+                                            n8n is an open-source workflow automation tool. <br>
+                                            I worked as a contributor building new integrations and writing documentation. 
+                                            I built new integrations in TypeScript for Spotify, Gmail, and ConvertKit and debugged 
+                                            the GitHub integration.<br><br>
+                                            <strong class="has-text-left">Contributor</strong> <br>
+                                            <strong class="has-text-left">Built With:</strong> Vue.js, Express, and TypeScript <br><br>
+                                          </section>
+                                        </div>
+                                      </div>
                                   </div>
                             </div>
                         </div>
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/moodsort.png" alt="Avatar" class="hoverImage">
-                                    <div class="hoverOverlay">
+                                    <img src="./assests/images/moodsort.png" alt="Avatar" class="hoverImage" onclick='toggleModal("moodsort")'>
+                                    <div class="hoverOverlay is-hidden-touch">
                                       <div class="hoverText is-size-6-mobile">
                                         MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
                                         Users choose the playlist they want sorted and the different moods they want songs categorized 
@@ -246,13 +318,35 @@
                                         </a>
                                         </div>
                                     </div>
+                                    <div class="modal is-hidden-desktop" id="moodsort">
+                                        <div class="modal-background" onclick='toggleModal("moodsort")'></div>
+                                        <div class="modal-card">
+                                          <header class="modal-card-head">
+                                                <p class="modal-card-title  has-icons-right">
+                                                    <a href="http://moodsort.com">
+                                                        <strong class="has-text-black">MoodSort</strong>
+                                                        <i class="fas fa-external-link-alt has-text-black"></i>
+                                                    </a>
+                                                </p>
+                                            <button class="delete" aria-label="close" onclick='toggleModal("moodsort")'></button>
+                                          </header>
+                                          <section class="modal-card-body has-text-left">
+                                            MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
+                                            Users choose the playlist they want sorted and the different moods they want songs categorized 
+                                            as. <br>
+                                            I ideated and built the project from frontend to backend.<br><br>
+                                            <strong class="has-text-left">Independent Project</strong> <br>
+                                            <strong class="has-text-left">Built With:</strong> Built With: React.js, Express.js, Node.js, and Styled Components <br><br>
+                                          </section>
+                                        </div>
+                                      </div>
                                   </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/courseselection.png" alt="Avatar" class="hoverImage">
-                                    <div class="hoverOverlay">
-                                      <div class="hoverText is-size-6-mobile">
+                                    <img src="./assests/images/courseselection.png" alt="Avatar" class="hoverImage" onclick='toggleModal("lville")'>
+                                    <div class="hoverOverlay is-hidden-touch">
+                                      <div class="hoverText is-size-6-mobile is-hidden-touch">
                                           I created an online course selection system to replace the paper-based system at my 
                                           high school, relieving the registrar of manually inputting hundreds of student course 
                                           selections. I worked with a teacher to integrate my application with the student online 
@@ -265,6 +359,28 @@
                                          </a> 
                                           </div>
                                     </div>
+                                    <div class="modal is-hidden-desktop" id="lville">
+                                        <div class="modal-background" onclick='toggleModal("lville")'></div>
+                                        <div class="modal-card">
+                                          <header class="modal-card-head">
+                                                <p class="modal-card-title  has-icons-right">
+                                                    <a href="https://erin2722.github.io/lville-course-selection/">
+                                                        <strong class="has-text-black">See Example</strong> 
+                                                        <i class="fas fa-external-link-alt has-text-black"></i>
+                                                     </a> 
+                                                </p>
+                                            <button class="delete" aria-label="close" onclick='toggleModal("lville")'></button>
+                                          </header>
+                                          <section class="modal-card-body has-text-left">
+                                            I created an online course selection system to replace the paper-based system at my 
+                                            high school, relieving the registrar of manually inputting hundreds of student course 
+                                            selections. I worked with a teacher to integrate my application with the student online 
+                                            system and it launched for school-wide use in February 2020. <br><br>
+                                            <strong class="has-text-left">Independent Project</strong> <br>
+                                           <strong class="has-text-left">Built With:</strong> HTML, CSS, jQuery <br><br>
+                                          </section>
+                                        </div>
+                                      </div>
                                   </div>
                             </div>
                         </div>
