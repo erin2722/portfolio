@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="description" content="Erin McNulty Developer Portfolio">
-    <meta name="keywords" content="JavaScript,Portfolio,Developer,Student,Erin McNulty">
-    <meta name="author" content="Erin McNulty">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Erin McNulty</title>
-    <link rel="icon" href="./assests/images/EM Logo1.png" type="image/png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <link rel = "stylesheet" href="./assests/stylesheets/style.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init("user_Fs50HYFLUniKqQcwsTTnk");
-    })();
-    </script>
-  </head>
-  <body>
+    <head>
+        <meta name="description" content="Erin McNulty Developer Portfolio">
+        <meta name="keywords" content="JavaScript,Portfolio,Developer,Student,Erin McNulty">
+        <meta name="author" content="Erin McNulty">
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Erin McNulty</title>
+
+        <link rel="icon" href="./assests/images/EM Logo1.png" type="image/png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+        <link rel = "stylesheet" href="./assests/stylesheets/style.css">
+
+        <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("user_Fs50HYFLUniKqQcwsTTnk");
+            })();
+        </script>
+    </head>
+    <body>
         <nav class="navbar is-fixed-top py-3 px-4" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-              <a class="navbar-item" href="#section1">
+                <a class="navbar-item" href="#section1">
                 <img src="./assests/images/EM Logo3.png" alt="EM Logo">
-              </a>
-          
-              <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                </a>
+            
+                <a role="button" class="navbar-burger burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
-              </a>
+                </a>
             </div>
-          
+            
             <div class="navbar-menu level" id="navMenu">
-              <div class="navbar-end">
+                <div class="navbar-end">
                 <a class="navbar-item" href="#section1">
                     Home
                 </a>
-          
+            
                 <a class="navbar-item" href="#section2">
                     About Me
                 </a>
-          
+            
                 <a class="navbar-item" href="#section3">
                     What I Do
                 </a>
 
                 <a class="navbar-item" href="#section4">
-                     My Projects
+                        My Projects
                 </a>
 
                 <a class="navbar-item" href="#section5">
                     Contact Me
                 </a>
-              </div>
+                </div>
             </div>
         </nav>
         <main role="main">
@@ -97,13 +101,13 @@
                         </div>
                     </div>
                 </div>
-              </section>
-              <section class="section is-medium is-vertical-center blue-background" id="section2">
+                </section>
+                <section class="section is-medium is-vertical-center blue-background" id="section2">
                 <div class="container">
                     <div class = "container level pb-2">
                         <figure class="image px-5">
                             <img class="is-rounded" src="./assests/images/me.jpg" width = "300" height = "300" alt="Me">
-                         </figure>
+                            </figure>
                         <div class = "container px-5">
                             <h2 class="title is-2 is-spaced">About Me</h2>
                             <h5 class="subtitle is-5">
@@ -123,9 +127,9 @@
                             </a>
                         </button>
                     </div>
-                 </div>
-              </section>
-              <section class="section is-vertical-center" id="section3">
+                    </div>
+                </section>
+                <section class="section is-vertical-center" id="section3">
                 <div class="container">
                     <div class= "container has-text-centered">
                         <h2 class="title is-2 pt-5 pb-5">What I Do</h2>
@@ -210,8 +214,8 @@
                         </button>
                     </div>
                 </div>
-              </section>
-              <section class="section is-vertical-center blue-background" id="section4">
+                </section>
+                <section class="section is-vertical-center blue-background" id="section4">
                 <div class="container has-text-centered pt-5">
                     <div class= "container has-text-centered">
                         <h2 class="title is-2 pt-3 pb-3">My Projects</h2>
@@ -223,39 +227,39 @@
                                     <img src="./assests/images/timesort.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("timesort")'>
                                     <div class="hoverOverlay" id="timesort">
                                         <div class="hoverText" onclick='toggleVisability("timesort")'>
-                                          TimeSort manages the user's time for them. <br>
-                                          After entering in what they need to get done, TimeSort organizes the user’s tasks 
-                                          around the preexisting events in their Google Calendar and gives them a minute-by-minute 
-                                          plan to accomplish everything they hope to. <br> I worked as a Javascript engineer on the team 
-                                          and helped lead the user testing and validation processes. <br><br>
-                                          <strong class="has-text-white">Group Project</strong> <br>
-                                          <strong class="has-text-white">Built With:</strong> HTML (/ERB), CSS, JavaScript, C++, and Ruby on Rails <br><br>
-                                          <a href="https://timesort.co">
+                                            TimeSort manages the user's time for them. <br>
+                                            After entering in what they need to get done, TimeSort organizes the user’s tasks 
+                                            around the preexisting events in their Google Calendar and gives them a minute-by-minute 
+                                            plan to accomplish everything they hope to. <br> I worked as a Javascript engineer on the team 
+                                            and helped lead the user testing and validation processes. <br><br>
+                                            <strong class="has-text-white">Group Project</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> HTML (/ERB), CSS, JavaScript, C++, and Ruby on Rails <br><br>
+                                            <a href="https://timesort.co">
                                             <strong class="has-text-white">timesort.co</strong>
                                             <i class="fas fa-external-link-alt has-text-white"></i>
-                                          </a>
+                                            </a>
                                         </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
                                     <img src="./assests/images/n8n.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("n8n")'>
                                     <div class="hoverOverlay" id="n8n">
-                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("n8n")'>  
-                                          n8n is an open-source workflow automation tool. <br>
-                                          I worked as a contributor building new integrations and writing documentation. 
-                                          I built new integrations in TypeScript for Spotify, Gmail, and ConvertKit and debugged 
-                                          the GitHub integration.<br><br>
-                                          <strong class="has-text-white">Contributor</strong> <br>
-                                          <strong class="has-text-white">Built With:</strong> Vue.js, Express, and TypeScript <br><br>
-                                          <a href="https://n8n.io">
+                                        <div class="hoverText is-size-6-mobile" onclick='toggleVisability("n8n")'>  
+                                            n8n is an open-source workflow automation tool. <br>
+                                            I worked as a contributor building new integrations and writing documentation. 
+                                            I built new integrations in TypeScript for Spotify, Gmail, and ConvertKit and debugged 
+                                            the GitHub integration.<br><br>
+                                            <strong class="has-text-white">Contributor</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> Vue.js, Express, and TypeScript <br><br>
+                                            <a href="https://n8n.io">
                                             <strong class="has-text-white">n8n.io</strong>
                                             <i class="fas fa-external-link-alt has-text-white"></i>
-                                          </a>  
+                                            </a>  
                                         </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                         <div class="tile is-vertical mx-2">
@@ -263,39 +267,39 @@
                                 <div class="hoverable is-relative">
                                     <img src="./assests/images/moodsort.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("moodsort")'>
                                     <div class="hoverOverlay" id="moodsort">
-                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("moodsort")'>
-                                        MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
-                                        Users choose the playlist they want sorted and the different moods they want songs categorized 
-                                        as. <br>
-                                        I ideated and built the project from frontend to backend.<br><br>
-                                        <strong class="has-text-white">Independent Project</strong> <br>
-                                        <strong class="has-text-white">Built With:</strong> Built With: React.js, Express.js, Node.js, and Styled Components <br><br>
-                                        <a href="http://moodsort.com">
-                                            <strong class="has-text-white">moodsort.com</strong>
-                                            <i class="fas fa-external-link-alt has-text-white"></i>
-                                        </a>
+                                        <div class="hoverText is-size-6-mobile" onclick='toggleVisability("moodsort")'>
+                                            MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
+                                            Users choose the playlist they want sorted and the different moods they want songs categorized 
+                                            as. <br>
+                                            I ideated and built the project from frontend to backend.<br><br>
+                                            <strong class="has-text-white">Independent Project</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> Built With: React.js, Express.js, Node.js, and Styled Components <br><br>
+                                            <a href="http://moodsort.com">
+                                                <strong class="has-text-white">moodsort.com</strong>
+                                                <i class="fas fa-external-link-alt has-text-white"></i>
+                                            </a>
                                         </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
                                     <img src="./assests/images/courseselection.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("lville")'>
                                     <div class="hoverOverlay" id="lville">
-                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("lville")'>
-                                          I created an online course selection system to replace the paper-based system at my 
-                                          high school, relieving the registrar of manually inputting hundreds of student course 
-                                          selections. I worked with a teacher to integrate my application with the student online 
-                                          system and it launched for school-wide use in February 2020. <br><br>
-                                          <strong class="has-text-white">Independent Project</strong> <br>
-                                         <strong class="has-text-white">Built With:</strong> HTML, CSS, jQuery <br><br>
-                                         <a href="https://erin2722.github.io/lville-course-selection/">
-                                            <strong class="has-text-white">See Example</strong> 
-                                            <i class="fas fa-external-link-alt has-text-white"></i>
-                                         </a> 
-                                          </div>
+                                        <div class="hoverText is-size-6-mobile" onclick='toggleVisability("lville")'>
+                                            I created an online course selection system to replace the paper-based system at my 
+                                            high school, relieving the registrar of manually inputting hundreds of student course 
+                                            selections. I worked with a teacher to integrate my application with the student online 
+                                            system and it launched for school-wide use in February 2020. <br><br>
+                                            <strong class="has-text-white">Independent Project</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> HTML, CSS, jQuery <br><br>
+                                            <a href="https://erin2722.github.io/lville-course-selection/">
+                                                <strong class="has-text-white">See Example</strong> 
+                                                <i class="fas fa-external-link-alt has-text-white"></i>
+                                            </a> 
+                                        </div>
                                     </div>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -305,81 +309,84 @@
                         <i class="fas fa-arrow-down hvr-icon"></i>
                         </a>
                     </button>
-                 </div>
-              </section>
-              <section class="section is-vertical-center" id="section5">
+                    </div>
+                </section>
+                <section class="section is-vertical-center" id="section5">
                 <div class="container">
                     <div class="columns">
-                    <div class="column is-9 is-offset-2">
-                        <div class= "container has-text-centered">
-                            <h2 class="title is-2 pt-5 pb-3">Contact Me</h2>
-                        </div>
-                        <div class="field">
-                            <div class="control">
-                            <label class="label">Name</label>
-                            <input class="input" type="text" placeholder="What's Your Name?" id="name">
+                        <div class="column is-9 is-offset-2">
+                            <div class= "container has-text-centered">
+                                <h2 class="title is-2 pt-5 pb-3">Contact Me</h2>
                             </div>
-                        </div>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label">Name
+                                        <input class="input" type="text" placeholder="What's Your Name?" id="name">
+                                    </label>
+                                </div>
+                            </div>
                         
-                        <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                            <label class="label">Email</label>
-                            <input class="input" type="email" placeholder="hello@" id="email">
-                            <span class="icon is-small is-left">
-                                <i class="fas fa-envelope"></i>
-                            </span>
+                            <div class="field">
+                                <label class="label" for="email">Email</label>
+                                <div class="control has-icons-left has-icons-right">
+                                    <input class="input" type="email" placeholder="hello@" id="email">
+                                    <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="field">
-                            <div class="control">
-                                <label class="label">Subject</label>
-                                <input class="input" type="text" placeholder="Let's Chat!" id="subject">
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label">Subject
+                                        <input class="input" type="text" placeholder="Let's Chat!" id="subject">
+                                    </label>
+                                </div>
                             </div>
-                        </div>
                         
-                        <div class="field">
-                            <div class="control">
-                            <label class="label">Message</label>
-                            <textarea 
-                            class="textarea" 
-                            placeholder="I would love to talk about anything, including project ideas, recruitment opportunities, and advice about being a student technologist." 
-                            id="message"></textarea>
+                            <div class="field">
+                                <div class="control">
+                                    <label class="label">Message
+                                        <textarea 
+                                        class="textarea" 
+                                        placeholder="I would love to talk about anything, including project ideas, recruitment opportunities, and advice about being a student technologist." 
+                                        id="message"></textarea>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
                         
-                        <div class="field is-grouped">
-                            <div class="control">
-                            <button class="button is-link" onclick="submit()">Submit</button>
+                            <div class="field is-grouped">
+                                <div class="control">
+                                    <button class="button is-link" onclick="submit()">Submit</button>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </section>
+            </main>
+            <footer role="contentinfo" class = "footer blue-background">
+                <div class="container has-text-centered">
+                    <button class="button is-large negMargin" aria-label="Go to Top">
+                        <a class="hvr-icon-wobble-vertical" href="#section1" aria-label="Go to Top">
+                            <i class="fas fa-arrow-up hvr-icon"></i>
+                        </a>
+                    </button>
                 </div>
-              </section>
-        </main>
-        <footer role="contentinfo" class = "footer blue-background">
-            <div class="container has-text-centered">
-                <button class="button is-large negMargin" aria-label="Go to Top">
-                    <a class="hvr-icon-wobble-vertical" href="#section1">
-                        <i class="fas fa-arrow-up hvr-icon"></i>
-                    </a>
-                </button>
-            </div>
-            <div class="content has-text-centered">
-                <button class="button is-large" aria-label="LinkedIn">
-                    <a class="hvr-icon-bounce" href="https://linkedin.com/in/erin-mcnulty">
-                        <i class="fab fa-linkedin-in hvr-icon"></i>
-                    </a>
-                </button>
-                <button class="button is-large" aria-label="Github">
-                    <a class="hvr-icon-bounce" href="https://github.com/erin2722">
-                        <i class="fab fa-github hvr-icon"></i>
-                    </a>
-                </button>
-                <br><br>
-                <p class="is-size-7">ERIN MCNULTY 2020</p>
-            </div>
-        </footer>
-        <script type="text/javascript" src="./assests/javascript/index.js"></script>
-      </body>
+                <div class="content has-text-centered">
+                    <button class="button is-large" aria-label="LinkedIn">
+                        <a class="hvr-icon-bounce" href="https://linkedin.com/in/erin-mcnulty" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in hvr-icon"></i>
+                        </a>
+                    </button>
+                    <button class="button is-large" aria-label="Github">
+                        <a class="hvr-icon-bounce" href="https://github.com/erin2722" aria-label="Github">
+                            <i class="fab fa-github hvr-icon"></i>
+                        </a>
+                    </button>
+                    <br><br>
+                    <p class="is-size-7">ERIN MCNULTY 2020</p>
+                </div>
+            </footer>
+            <script type="text/javascript" src="./assests/javascript/index.js"></script>
+    </body>
 </html>
