@@ -3,9 +3,9 @@ html {
 }
 
 .is-vertical-center {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -21,11 +21,11 @@ html {
 }
 
 .blue-background {
-    background-color: #edf4ff;
+  background-color: #edf4ff;
 }
 
 .footer-background {
-    background-color: #6495ED;
+  background-color: #6495ED;
 }
 
 .negMargin {
@@ -38,39 +38,44 @@ html {
 }
   
 .hoverImage {
-display: block;
-width: 100%;
-height: 100%;
-border: 2px solid lightgray;
-border-radius: 10px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid lightgray;
+  border-radius: 10px;
 }
 
 .overlay {
-position: absolute;
-bottom: .1rem;
-left: 0;
-right: 0;
-height: 2rem;
-background-color:  #6495ED;
-border-radius: 10px;
+  position: absolute;
+  bottom: .1rem;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background-color:  #6495ED;
+  border-radius: 10px;
 }
 
 .hoverOverlay {
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-height: 100%;
-width: 100%;
-display: none;
-transition: .5s ease;
-background-color: #6495ED;
-border-radius: 10px;
-overflow-y: scroll;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  transition: .5s ease;
+  background-color: #6495ED;
+  border-radius: 10px;
+  overflow-y: scroll;
 }
+
 @media only screen and (min-width: 768px) {
   .hoverable:hover .hoverOverlay {
+    display: block;
+  }
+
+  .hoverable:focus .hoverOverlay {
     display: block;
   }
 }
@@ -80,18 +85,6 @@ overflow-y: scroll;
   padding: 2rem;
   text-align: left;
 }
-
-/* 
-@media only screen and (max-width: 767px) {
-  .hoverable:hover .hoverOverlay {
-    opacity: 1;
-    height: fit-content;
-    z-index: 2;
-    overflow-y: auto;
-    position: static;
-    display: block;
-  }
-} */
 
 /* Icon Hang */
 @-webkit-keyframes hvr-icon-hang {
