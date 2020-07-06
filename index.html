@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="description" content="Erin McNulty Developer Portfolio">
+    <meta name="keywords" content="JavaScript,Portfolio,Developer,Student,Erin McNulty">
+    <meta name="author" content="Erin McNulty">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erin McNulty</title>
@@ -63,7 +66,7 @@
                         <div class="tile"></div>
                         <div class="tile"></div>
                         <div class="tile">
-                            <img src="assests/images/icons8-web-160.png" width="120px">
+                            <img src="assests/images/icons8-web-160.png" width="128px">
                         </div>
                     </div>
                     <div class="tile">
@@ -99,7 +102,7 @@
                 <div class="container">
                     <div class = "container level pb-2">
                         <figure class="image px-5">
-                            <img class="is-rounded" src="./assests/images/me.jpg" width = "300" height = "300">
+                            <img class="is-rounded" src="./assests/images/me.jpg" width = "300" height = "300" alt="Me">
                          </figure>
                         <div class = "container px-5">
                             <h2 class="title is-2 is-spaced">About Me</h2>
@@ -217,9 +220,9 @@
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/timesort.png" alt="Avatar" class="hoverImage" onclick='toggleModal("timesort")'>
-                                    <div class="hoverOverlay is-hidden-touch">
-                                        <div class="hoverText">
+                                    <img src="./assests/images/timesort.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("timesort")'>
+                                    <div class="hoverOverlay" id="timesort">
+                                        <div class="hoverText" onclick='toggleVisability("timesort")'>
                                           TimeSort manages the user's time for them. <br>
                                           After entering in what they need to get done, TimeSort organizes the user’s tasks 
                                           around the preexisting events in their Google Calendar and gives them a minute-by-minute 
@@ -233,36 +236,13 @@
                                           </a>
                                         </div>
                                     </div>
-                                    <div class="modal is-hidden-desktop" id="timesort">
-                                        <div class="modal-background" onclick='toggleModal("timesort")'></div>
-                                        <div class="modal-card">
-                                          <header class="modal-card-head">
-                                                <p class="modal-card-title  has-icons-right">
-                                                    <a href="https://timesort.co">
-                                                    <strong class="has-text-black">TimeSort</strong>
-                                                    <i class="fas fa-external-link-alt has-text-black"></i>
-                                                    </a>
-                                                </p>
-                                            <button class="delete" aria-label="close" onclick='toggleModal("timesort")'></button>
-                                          </header>
-                                          <section class="modal-card-body has-text-left">
-                                                TimeSort manages the user's time for them. <br>
-                                                After entering in what they need to get done, TimeSort organizes the user’s tasks 
-                                                around the preexisting events in their Google Calendar and gives them a minute-by-minute 
-                                                plan to accomplish everything they hope to. <br> I worked as a Javascript engineer on the team 
-                                                and helped lead the user testing and validation processes. <br><br>
-                                                <strong class="has-text-left">Group Project</strong> <br>
-                                                <strong class="has-text-left">Built With:</strong> HTML (/ERB), CSS, JavaScript, C++, and Ruby on Rails <br><br>
-                                          </section>
-                                        </div>
-                                      </div>
                                   </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/n8n.png" alt="Avatar" class="hoverImage" onclick='toggleModal("n8n")'>
-                                    <div class="hoverOverlay is-hidden-touch">
-                                      <div class="hoverText is-size-6-mobile">  
+                                    <img src="./assests/images/n8n.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("n8n")'>
+                                    <div class="hoverOverlay" id="n8n">
+                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("n8n")'>  
                                           n8n is an open-source workflow automation tool. <br>
                                           I worked as a contributor building new integrations and writing documentation. 
                                           I built new integrations in TypeScript for Spotify, Gmail, and ConvertKit and debugged 
@@ -275,37 +255,15 @@
                                           </a>  
                                         </div>
                                     </div>
-                                    <div class="modal is-hidden-desktop" id="n8n">
-                                        <div class="modal-background" onclick='toggleModal("n8n")'></div>
-                                        <div class="modal-card">
-                                          <header class="modal-card-head">
-                                                <p class="modal-card-title has-icons-right">
-                                                    <a href="https://n8n.io">
-                                                        <strong class="has-text-black">n8n</strong>
-                                                        <i class="fas fa-external-link-alt has-text-black"></i>
-                                                      </a> 
-                                                </p>
-                                            <button class="delete" aria-label="close" onclick='toggleModal("n8n")'></button>
-                                          </header>
-                                          <section class="modal-card-body has-text-left">
-                                            n8n is an open-source workflow automation tool. <br>
-                                            I worked as a contributor building new integrations and writing documentation. 
-                                            I built new integrations in TypeScript for Spotify, Gmail, and ConvertKit and debugged 
-                                            the GitHub integration.<br><br>
-                                            <strong class="has-text-left">Contributor</strong> <br>
-                                            <strong class="has-text-left">Built With:</strong> Vue.js, Express, and TypeScript <br><br>
-                                          </section>
-                                        </div>
-                                      </div>
                                   </div>
                             </div>
                         </div>
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/moodsort.png" alt="Avatar" class="hoverImage" onclick='toggleModal("moodsort")'>
-                                    <div class="hoverOverlay is-hidden-touch">
-                                      <div class="hoverText is-size-6-mobile">
+                                    <img src="./assests/images/moodsort.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("moodsort")'>
+                                    <div class="hoverOverlay" id="moodsort">
+                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("moodsort")'>
                                         MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
                                         Users choose the playlist they want sorted and the different moods they want songs categorized 
                                         as. <br>
@@ -318,35 +276,13 @@
                                         </a>
                                         </div>
                                     </div>
-                                    <div class="modal is-hidden-desktop" id="moodsort">
-                                        <div class="modal-background" onclick='toggleModal("moodsort")'></div>
-                                        <div class="modal-card">
-                                          <header class="modal-card-head">
-                                                <p class="modal-card-title  has-icons-right">
-                                                    <a href="http://moodsort.com">
-                                                        <strong class="has-text-black">MoodSort</strong>
-                                                        <i class="fas fa-external-link-alt has-text-black"></i>
-                                                    </a>
-                                                </p>
-                                            <button class="delete" aria-label="close" onclick='toggleModal("moodsort")'></button>
-                                          </header>
-                                          <section class="modal-card-body has-text-left">
-                                            MoodSort sorts user’s Spotify playlists based on each song’s mood. <br>
-                                            Users choose the playlist they want sorted and the different moods they want songs categorized 
-                                            as. <br>
-                                            I ideated and built the project from frontend to backend.<br><br>
-                                            <strong class="has-text-left">Independent Project</strong> <br>
-                                            <strong class="has-text-left">Built With:</strong> Built With: React.js, Express.js, Node.js, and Styled Components <br><br>
-                                          </section>
-                                        </div>
-                                      </div>
                                   </div>
                             </div>
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="./assests/images/courseselection.png" alt="Avatar" class="hoverImage" onclick='toggleModal("lville")'>
-                                    <div class="hoverOverlay is-hidden-touch">
-                                      <div class="hoverText is-size-6-mobile is-hidden-touch">
+                                    <img src="./assests/images/courseselection.png" alt="Avatar" class="hoverImage" onclick='toggleVisability("lville")'>
+                                    <div class="hoverOverlay" id="lville">
+                                      <div class="hoverText is-size-6-mobile" onclick='toggleVisability("lville")'>
                                           I created an online course selection system to replace the paper-based system at my 
                                           high school, relieving the registrar of manually inputting hundreds of student course 
                                           selections. I worked with a teacher to integrate my application with the student online 
@@ -359,28 +295,6 @@
                                          </a> 
                                           </div>
                                     </div>
-                                    <div class="modal is-hidden-desktop" id="lville">
-                                        <div class="modal-background" onclick='toggleModal("lville")'></div>
-                                        <div class="modal-card">
-                                          <header class="modal-card-head">
-                                                <p class="modal-card-title  has-icons-right">
-                                                    <a href="https://erin2722.github.io/lville-course-selection/">
-                                                        <strong class="has-text-black">See Example</strong> 
-                                                        <i class="fas fa-external-link-alt has-text-black"></i>
-                                                     </a> 
-                                                </p>
-                                            <button class="delete" aria-label="close" onclick='toggleModal("lville")'></button>
-                                          </header>
-                                          <section class="modal-card-body has-text-left">
-                                            I created an online course selection system to replace the paper-based system at my 
-                                            high school, relieving the registrar of manually inputting hundreds of student course 
-                                            selections. I worked with a teacher to integrate my application with the student online 
-                                            system and it launched for school-wide use in February 2020. <br><br>
-                                            <strong class="has-text-left">Independent Project</strong> <br>
-                                           <strong class="has-text-left">Built With:</strong> HTML, CSS, jQuery <br><br>
-                                          </section>
-                                        </div>
-                                      </div>
                                   </div>
                             </div>
                         </div>
@@ -401,15 +315,15 @@
                             <h2 class="title is-2 pt-5 pb-3">Contact Me</h2>
                         </div>
                         <div class="field">
-                            <label class="label">Name</label>
                             <div class="control">
+                            <label class="label">Name</label>
                             <input class="input" type="text" placeholder="What's Your Name?" id="name">
                             </div>
                         </div>
                         
                         <div class="field">
-                            <label class="label">Email</label>
                             <div class="control has-icons-left has-icons-right">
+                            <label class="label">Email</label>
                             <input class="input" type="email" placeholder="hello@" id="email">
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
@@ -418,15 +332,15 @@
                         </div>
 
                         <div class="field">
-                            <label class="label">Subject</label>
                             <div class="control">
+                                <label class="label">Subject</label>
                                 <input class="input" type="text" placeholder="Let's Chat!" id="subject">
                             </div>
                         </div>
                         
                         <div class="field">
-                            <label class="label">Message</label>
                             <div class="control">
+                            <label class="label">Message</label>
                             <textarea 
                             class="textarea" 
                             placeholder="I would love to talk about anything, including project ideas, recruitment opportunities, and advice about being a student technologist." 
@@ -445,19 +359,19 @@
         </main>
         <footer role="contentinfo" class = "footer blue-background">
             <div class="container has-text-centered">
-                <button class="button is-large negMargin">
+                <button class="button is-large negMargin" aria-label="Go to Top">
                     <a class="hvr-icon-wobble-vertical" href="#section1">
                         <i class="fas fa-arrow-up hvr-icon"></i>
                     </a>
                 </button>
             </div>
             <div class="content has-text-centered">
-                <button class="button is-large">
+                <button class="button is-large" aria-label="LinkedIn">
                     <a class="hvr-icon-bounce" href="https://linkedin.com/in/erin-mcnulty">
                         <i class="fab fa-linkedin-in hvr-icon"></i>
                     </a>
                 </button>
-                <button class="button is-large">
+                <button class="button is-large" aria-label="Github">
                     <a class="hvr-icon-bounce" href="https://github.com/erin2722">
                         <i class="fab fa-github hvr-icon"></i>
                     </a>

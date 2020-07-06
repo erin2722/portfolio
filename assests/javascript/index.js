@@ -41,8 +41,15 @@ function submit() {
 } 
 
 function toggleModal(project) {
-  console.log(project);
   const modal = document.getElementById(project);
 
   modal.classList.toggle('is-active');
+}
+
+function toggleVisability(project) {
+  const modal = document.getElementById(project);
+
+  console.log(modal);
+
+  modal.classList.toggle('is-visable');
 }
