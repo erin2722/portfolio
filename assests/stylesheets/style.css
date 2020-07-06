@@ -32,9 +32,13 @@ html {
   margin-top: -5rem;
 }
 
-.is-visable {
-  display: block !important;
-  position: static !important;
+@media only screen and (max-width: 1024px) {
+  .is-visable {
+    display: block !important;
+    position: static !important;
+    opacity: 1 !important;
+  }
+  }
 }
   
 .hoverImage {
@@ -63,20 +67,20 @@ html {
   right: 0;
   height: 100%;
   width: 100%;
-  display: none;
+  opacity: 0;
   transition: .5s ease;
   background-color: #6495ED;
   border-radius: 10px;
   overflow-y: scroll;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .hoverable:hover .hoverOverlay {
-    display: block;
+    opacity: 1;
   }
 
   .hoverable:focus .hoverOverlay {
-    display: block;
+    opacity: 1;
   }
 }
 

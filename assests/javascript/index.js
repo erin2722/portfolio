@@ -40,12 +40,6 @@ function submit() {
   return false;
 } 
 
-function toggleModal(project) {
-  const modal = document.getElementById(project);
-
-  modal.classList.toggle('is-active');
-}
-
 function toggleVisability(project) {
   const modal = document.getElementById(project);
 
