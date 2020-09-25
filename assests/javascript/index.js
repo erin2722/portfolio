@@ -19,6 +19,12 @@ function submit() {
   const subject = document.getElementById("subject").value;
   const message = document.getElementById("message").value;
 
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("subject").value = "";
+  document.getElementById("message").value = "";
+
+
   var service_id = "default_service";
 
   const params = {
