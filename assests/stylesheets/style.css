@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.profile-pic {
+  width: 400px !important;
+  height: 300px !important;
+  object-fit: cover;
+  border-radius: 50% !important;
+}
+
 .is-vertical-center {
   display: flex;
   align-items: center;
@@ -16,7 +23,7 @@ html {
 
 @media only screen and (min-width: 1024px) {
   .whatIDo {
-    height: 23rem;
+    height: 26rem;
   }
 }
 
@@ -37,7 +44,6 @@ html {
     display: block !important;
     position: static !important;
     opacity: 1 !important;
-  }
   }
 }
   
