@@ -78,7 +78,7 @@
                             <div class="container has-text-centered py-6">
                                 <h2 class="title is-2 is-spaced">Hello 👋 I'm <strong>Erin McNulty</strong>.</h2>
                                 <h5 class="subtitle is-5">
-                                    I am a <strong>Full-Stack Web Developer</strong> and a <strong>Student</strong>.
+                                    I am a <strong>Full-Stack Developer</strong> and a <strong>Student</strong>.
                                 </h5>
                                 <button class="button is-large">
                                     <a class="hvr-icon-hang" href="#section2">
@@ -113,12 +113,11 @@
                             <h5 class="subtitle is-5">
                                 &#128218; I am a student at <strong>Columbia University</strong> studying <strong>Computer Science</strong> and 
                                 <strong>History.</strong> <br><br>
-                                &#128187; I am an incoming <strong>Software Engineering Intern at MongoDB</strong>, a  
+                                &#128187; I was a <strong>Software Engineering Intern at MongoDB</strong> in 2021 and 2022, a  
                                 <strong>Summer 2020 Major League Hacking Fellow</strong>, and a 
                                 <strong>2020 hackNY Fellow</strong>. <br><br>
                                 💭 I have experience ideating, designing, and building products and features from end to end. <br><br>
-                                &#128295;  I build to uplift rather than to disrupt, and I reject the idea that building 
-                                something valuable necessitates me breaking other things. <br>
+                                &#128295; Though I got my start as a web programmer, I have recently been excited about systems programming, particularly distrbuted systems. <br>
                             </h5>
                         </div>
                     </div>
@@ -149,14 +148,15 @@
                                     </div>
                                     <div class="content">
                                         <ul>
+                                            <li>C++</li>
+                                            <li>C</li>
+                                            <li>Python</li>
+                                            <li>Java</li>
                                             <li>JavaScript (ES6)</li>
                                             <li>TypeScript</li>
                                             <li>HTML5</li>
                                             <li>CSS</li>
                                             <li>SQL</li>
-                                            <li>C</li>
-                                            <li>Python</li>
-                                            <li>Java</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -183,13 +183,13 @@
                                     <div class="content">
                                         <ul>
                                             <li>Git</li>
-                                            <li>JSON and API Usage</li>
+                                            <li>Linux</li>
                                             <li>MySQL</li>
                                             <li>PostgreSQL</li>
                                             <li>MongoDB</li>
-                                            <li>AWS (Lambda, S3)</li>
+                                            <li>AWS (EC2, RDS, Lambda, S3)</li>
                                             <li>Docker</li>
-                                            <li>Serverless</li>
+                                            <li>GCP (Compute Engine)</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -206,12 +206,13 @@
                                     </div>
                                     <div class="content">
                                         <ul>
+                                            <li>Distributed Systems</li>
                                             <li>Operating Systems</li>
                                             <li>Database System Implementation</li>
+                                            <li>Computer Networks</li>
                                             <li>Cloud Computing</li>
                                             <li>Fundamentals of Computer Systems</li>
                                             <li>Artificial Intelligence</li>
-                                            <li>User Interface Design</li>
                                             <li>Introduction to Databases</li>
                                             <li>Advanced Programming</li>
                                             <li>Data Structures in Java</li>
@@ -224,10 +225,10 @@
                                     </div>
                                     <div class="content">
                                         <ul>
-                                            <li>Teaching Assistant for Data: Past, Present, Future</li>
-                                            <li>Director of Startup Matching @ hackNY</li>
+                                            <li>Co-captain of Columbia Curbside Ultimate Frisbee Team</li>
                                             <li>Admissions Team @ Major League Hacking</li>
-                                            <li>Women's and Gender Diverse Ultimate Frisbee</li>
+                                            <li>2022 Director of Startup Matching @ hackNY</li>
+                                            <li>Teaching Assistant for Data: Past, Present, Future</li>
                                             <li>Former Head of Engineering @ Columbia Spectator</li>
                                         </ul>
                                     </div>
@@ -254,7 +255,27 @@
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="https://erins-things.s3.amazonaws.com/spec_site.png" alt="Columbia Daily Spectator Webpage" class="hoverImage" tabindex="0" onclick='toggleVisability("spec")'>
+                                    <img src="./assests/images/mongodb_diagram.png" alt="MongoDB replica set diagram." class="hoverImage" tabindex="0" onclick='toggleVisability("mongo")'>
+                                    <div class="hoverOverlay" id="mongo">
+                                        <div class="hoverText" onclick='toggleVisability("mongo")'>
+                                            For my Summer 2022 summer internship on MongoDB's Service Architecture team,
+                                            I built an API to allow MongoDB programmers to easily send commands asyncronously 
+                                            between running mongo processes. I built both a nonhedged and hedged implementation
+                                            of this API, where the hedged implementation allowed two servers to race to send 
+                                            back a response. <br><br>
+                                            <strong class="has-text-white">Internship Project</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> C++ <br><br>
+                                            <a href="https://github.com/mongodb/mongo/commit/08feb76700a9111aa8073c163b179ec05f4405e9">
+                                            <strong class="has-text-white">Hedged Reads Implemention</strong>
+                                            <i class="fas fa-external-link-alt has-text-white"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile is-12 my-3">
+                                <div class="hoverable is-relative">
+                                    <img src="./assests/images/spec-website.png" alt="Columbia Daily Spectator Webpage" class="hoverImage" tabindex="0" onclick='toggleVisability("spec")'>
                                     <div class="hoverOverlay" id="spec">
                                         <div class="hoverText" onclick='toggleVisability("spec")'>
                                             The website of the Columbia Daily Spectator. <br>
@@ -321,7 +342,22 @@
                         <div class="tile is-vertical mx-2">
                             <div class="tile is-12 my-3">
                                 <div class="hoverable is-relative">
-                                    <img src="https://erins-things.s3.amazonaws.com/lionclubs1.png" alt="Lionclubs Webpage" class="hoverImage" tabindex="0" onclick='toggleVisability("lionclubs")'>
+                                    <img src="./assests/images/linux.jpeg" alt="Linux Logo" class="hoverImage" tabindex="0" onclick='toggleVisability("os")'>
+                                    <div class="hoverOverlay" id="os">
+                                        <div class="hoverText" onclick='toggleVisability("os")'>
+                                            For my Spring 2022 Operating Systems class, I collaborated with two teammates to: <br>
+                                            - Build a Linux filesystem driver allowing users to create, delete, and read/write files, as well as create soft and hard links. <br>
+                                            - Design and implement a round robin scheduler, and set my scheduler as the default in my linux kernel. <br>
+                                            - Program a concurrent key-value store as a kernel module using RW locks, mutexes, and semaphores.<br><br>
+                                            <strong class="has-text-white">Team Project</strong> <br>
+                                            <strong class="has-text-white">Built With:</strong> C, built on top of the Linux kernel source code. <br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tile is-12 my-3">
+                                <div class="hoverable is-relative">
+                                    <img src="./assests/images/lionclubs.png" alt="Lionclubs Webpage" class="hoverImage" tabindex="0" onclick='toggleVisability("lionclubs")'>
                                     <div class="hoverOverlay" id="lionclubs">
                                         <div class="hoverText" onclick='toggleVisability("lionclubs")'>
                                             Lionclubs is the central hub for students to find student organizations at Columbia. <br>
@@ -380,9 +416,9 @@
                         </div>
                     </div>
                     <button class="button is-large">
-                    <a class="hvr-icon-hang" href="#section5">
-                        Contact Me
-                        <i class="fas fa-arrow-down hvr-icon"></i>
+                        <a class="hvr-icon-hang" href="#section5">
+                            Contact Me
+                            <i class="fas fa-arrow-down hvr-icon"></i>
                         </a>
                     </button>
                     </div>
